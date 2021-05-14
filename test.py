@@ -7,5 +7,8 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(calculator.adding(0, 3), 3)
         self.assertEqual(calculator.adding(-1, 3), 2)
 
+    def testFail(self):
+        self.assertEqual(0, 1)
+
 if __name__ == '__main__':
     unittest.main()
